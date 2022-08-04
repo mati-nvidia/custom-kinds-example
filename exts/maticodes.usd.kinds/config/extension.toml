@@ -1,0 +1,33 @@
+[core]
+reloadable = false
+# Load at the start, load all schemas with order -100 (with order -1000 the USD libs are loaded)
+order = -100
+
+[package]
+# Semantic Versionning is used: https://semver.org/
+version = "1.0.0"
+
+# The title and description fields are primarily for displaying extension info in UI
+title = "Custom USD Kinds Example"
+description="A simple example of an extension to add custom USD Kinds."
+
+# Path (relative to the root) or content of readme markdown file for UI.
+readme  = "docs/README.md"
+
+# URL of the extension source repository.
+repository = ""
+
+# One of categories for UI.
+category = "Example"
+
+# Keywords for the extension
+keywords = ["kit", "example", "USD"]
+
+
+# Use omni.ui to build simple UI
+[dependencies]
+"omni.usd.libs" = {}
+
+# Main python module this extension provides, it will be publicly available as "import maticodes.usd.kinds".
+[[python.module]]
+name = "maticodes.usd.kinds"

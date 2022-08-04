@@ -1,0 +1,23 @@
+{
+    "Plugins": [
+        {
+            "Info": {
+                "Kinds": {
+                    "chargroup": {
+                        "baseKind": "assembly",
+                        "description": "A chargroup is an assembly comprised of a single character plus some associated models -- typically hair, garments, and charprops."
+                    },
+                    "charprop": {
+                        "baseKind": "component"
+                    },
+                    "newRootKind": {
+                    }
+                }
+            }, 
+            "Name": "MatiCodesKinds", 
+            "ResourcePath": "resources", 
+            "Root": "..", 
+            "Type": "resource"
+        }
+    ]
+}
